@@ -1,4 +1,5 @@
-.red {
-  height: 500px;
-  background-color: red;
+body {
+  margin-top: 70px;
+  background: #333;
+  color: #fff;
 }

@@ -3,14 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
 
-    <title>First Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weight Converter</title>
   </head>
   <body>
-    <div class="container-fluid red">
-      <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-4">Weight Converter</h1>
+          <form>
+            <div class="form-group">
+              <input
+                id="lbsInput"
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Enter Pounds..."
+              />
+            </div>
+          </form>
+          <div id="output">
+            <div class="card bg-gradient-light text-dark mb-2">
+              <div class="card-block">
+                <h4>
+                  Grams:
+                </h4>
+                <div id="gramsOutPut"></div>
+              </div>
+            </div>
+
+            <div class="card bg-gradient-info text-dark mb-2">
+              <div class="card-block">
+                <h4>
+                  Kilograms:
+                </h4>
+                <div id="kgramsOutPut"></div>
+              </div>
+            </div>
+            <div class="card bg-gradient-warning text-dark mb-2">
+              <div class="card-block">
+                <h4>
+                  Ounces:
+                </h4>
+                <div id="ozOutPut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
